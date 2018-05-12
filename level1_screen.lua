@@ -1,11 +1,16 @@
 local composer = require( "composer" )
+local widget = require( "widget")
 
 --give the name to the scene
-sceneName = "main_menu"
+sceneName = "level1_screen"
 
 --creating scene object 
 local scene = composer.newScene(sceneName)
   
+--------------------------------------------------------------------------------
+--LOCAL VARIABLES
+----------------------------------------------------------------------------
+local bkg
 -- -----------------------------------------------------------------------------------
 -- Scene event functions
 -- -----------------------------------------------------------------------------------
@@ -15,7 +20,14 @@ function scene:create( event )
  
     local sceneGroup = self.view
     -- Code here runs when the scene is first created but has not yet appeared on screen
-
+  --create the background image
+   bkg = display.newImageRect("Level1Images/Level1ScreenValeriaV.png", 0, 0, 0, 0)
+   bkg.x = 510
+   bkg.y = 385
+   bkg.width = display.contentWidth
+   bkg.height = display.contentHeight
+   -- --Associating display objects with this scene
+   sceneGroup:insert(bkg)
    
 end
  
