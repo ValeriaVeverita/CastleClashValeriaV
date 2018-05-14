@@ -10,7 +10,7 @@ display.setStatusBar(display.HiddenStatusBar)
 --require composer
 local composer = require("composer")
 
-composer.gotoScene("main_menu")
+composer.gotoScene("splash screen")
 
 
 

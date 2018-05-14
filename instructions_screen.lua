@@ -1,3 +1,9 @@
+-----------------------------------------------------------------------------------------
+-- main.lua
+-- Created by: Valeria Veverita
+-- Date: May 10th, 2018
+-- Description: This is the instruction screen of the game
+
 local composer = require( "composer" )
 local widget = require( "widget")
 
