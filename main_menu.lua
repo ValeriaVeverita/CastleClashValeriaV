@@ -1,3 +1,9 @@
+-----------------------------------------------------------------------------------------
+-- main.lua
+-- Created by: Valeria Veverita
+-- Date: May 10th, 2018
+-- Description: This is the main menu, displaying the credits, instructions & play button
+
 local composer = require( "composer" )
 
 --give the name to the scene
@@ -262,7 +268,6 @@ function scene:hide( event )
     elseif ( phase == "did" ) then
         -- Code here runs immediately after the scene goes entirely off screen
         audio.stop(bkgChannel)
- 
     end
 end
  
